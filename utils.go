@@ -12,3 +12,10 @@ func placeCards()  {
 	cards = append(cards, "Josh")
 	cards.print()
 }
+
+
+func (d deck) print() {
+	for index, value := range d {
+		fmt.Print(index, ".", value, "; ")
+	}
+}
